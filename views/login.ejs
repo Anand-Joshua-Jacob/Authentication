@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>login</title>
+</head>
+
+
+<body>    
+  <h1>Login</h1>
+  <% if (messages.error) { %>
+    <%= messages.error %>
+  <% } %>
+  <form action="/login" method="POST">
+    <div>
+      <label for="username">Username: </label>
+      <input type="text" id="username" name="username" required autofocus autocomplete="off" placeholder="username">
+    </div>
+    <div>
+      <label for="password">Password: </label>
+      <input type="password" id="password" name="password" required autocomplete="off" placeholder="password">
+    </div>
+    <br>
+    <button type="submit">Login</button>
+  </form>
+</body>
+
+<footer style="font-size: small">
+  Not registered?<a href="/register">Register</a>
+</footer>

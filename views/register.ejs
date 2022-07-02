@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>Register</title>
+
+  <style>
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  </style>
+</head>
+
+<body>
+  <h1>Register</h1>
+  <form action="/register" method="POST">
+    <div>
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" required autocomplete="off" placeholder="name" autofocus>
+    </div>
+    <div>
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" required autocomplete="off" placeholder="email">
+    </div>
+    <div>
+      <label for="username">Username: </label>
+      <input type="text" id="username" name="username" required autocomplete="off" placeholder="username">
+    </div>
+    <div>
+      <label for="password">Password: </label>
+      <input type="password" id="password" name="password" required autocomplete="off" placeholder="password">
+    </div>
+    <div>
+      <label for="confirm password">Confirm Password: </label>
+      <input type="password" id="confirmpassword" name="confirmpassword" required autocomplete="off" placeholder="confirm password">
+    </div>
+    <div>
+      <label for="number">Mobile Number: </label>
+      <input type="number" id="number" name="number" inputmode=”numeric” required autocomplete="off" placeholder="number">
+    </div>
+    <br>
+    <button type="submit">Register</button>
+  </form>
+</body>
+
+<footer style="font-size: small">
+  Already registered?<a href="/login">Login</a>
+</footer>
+ 
